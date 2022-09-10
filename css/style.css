@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --dg: #084236;
+  --lg: #8ed7c6;
+  --m-color: #18c29c;
+  --s-color: #dce4e3;
+  --white: #ffffff;
+  --l-grey: #dce4e3;
+
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: min(100vh);
+  font-family: "Poppins", sans-serif;
+}
+
+nav.active {
+  width: min(25rem);
+  height: min(100vh);
+  display: flex;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: space-between;
+  background: var(--m-color);
+
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+nav.active header svg.logo {
+  display: initial;
+}
+
+nav.active header div.logo-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 2.9rem 1.4rem;
+  margin-block: 2.5rem;
+}
+
+nav.active header button.open-menu {
+  margin-block: initial;
+}
+
+nav.active form.search {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  background: var(--lg);
+  margin-inline: 1.4rem;
+  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+}
+
+nav.active form.search::before {
+  visibility: hidden;
+}
+
+nav.active form.search svg.m-aglass {
+  margin: initial;
+}
+
+nav.active form.search div.i-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 1.3rem 0;
+  padding-block-start: 0.4rem;
+}
+
+nav.active form.search input#search {
+  display: initial;
+  padding: 1.3rem;
+
+  width: 100%;
+  background: transparent;
+}
+
+nav.active ul.menu {
+  display: flex;
+  flex-flow: column;
+  gap: 3.4rem;
+  margin-inline: 2.7rem 0;
+}
+
+nav.active ul.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: var(--dg);
+}
+
+nav.active ul.menu li a span {
+  display: initial;
+}
+
+nav.active div.user {
+  padding-inline: 1.4rem;
+  padding-block: 0;
+  background: var(--lg);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  cursor: auto;
+}
+
+nav.active div.user img {
+  display: initial;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+}
+
+nav.active div.user-info {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-inline-end: 1.8rem;
+  padding-block: 0.8rem;
+}
+
+nav.active div.user-info .name {
+  display: initial;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  color: var(--dg);
+}
+nav.active div.user-info .job {
+  display: initial;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+  color: var(--dg);
+}
+
+/* barra encolhida */
+
+nav {
+  width: min(7.8rem);
+  height: min(100%);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--m-color);
+  transition: 0.5s;
+}
+
+nav header svg.logo {
+  display: none;
+}
+
+nav header button.open-menu {
+  margin-block: 2.6rem;
+}
+
+nav form.search {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+nav form.search label {
+  cursor: pointer;
+}
+
+nav form.search::before {
+  content: "";
+  background: var(--l-grey);
+  position: absolute;
+  z-index: -1;
+  width: 5rem;
+  height: 5rem;
+  left: -1.2rem;
+  top: -1.2rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+nav form.search input#search {
+  display: none;
+}
+
+nav ul.menu {
+  display: flex;
+  flex-flow: column;
+  gap: 3.4rem;
+}
+
+nav ul.menu li a span {
+  display: none;
+}
+
+nav div.user {
+  display: flex;
+  padding-block: 1.8rem;
+  justify-content: center;
+  width: 100%;
+  background: var(--lg);
+  cursor: pointer;
+}
+
+nav div.user img {
+  display: none;
+}
+
+nav div.user-info .name,
+nav div.user-info .job {
+  display: none;
+}

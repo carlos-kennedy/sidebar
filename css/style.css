@@ -108,10 +108,18 @@ nav.active ul.menu li a {
   display: flex;
   align-items: center;
   gap: 1.3rem;
-
   font-size: 1.5rem;
   line-height: 2.2rem;
   color: var(--dg);
+}
+
+nav.active ul.menu li {
+  transition: filter 0.8s;
+}
+
+nav.active ul.menu li:hover {
+  filter: opacity(0.8);
+  filter: contrast(1.7);
 }
 
 nav.active ul.menu li a span {
@@ -222,6 +230,17 @@ nav ul.menu {
   display: flex;
   flex-flow: column;
   gap: 3.4rem;
+}
+
+nav ul.menu li:hover,
+nav form.search:hover {
+  filter: opacity(0.8);
+  filter: contrast(1.7);
+}
+
+nav ul.menu li,
+nav form.search {
+  transition: filter 0.3s;
 }
 
 nav ul.menu li a span {

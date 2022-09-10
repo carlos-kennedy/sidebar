@@ -15,7 +15,7 @@ const changeSize = () => {
 
   if (buttonExpanded === "true" && buttonLabel === "open") {
     button.setAttribute("aria-expanded", "false");
-    button.setAttribute("aria-label", "fechado");
+    button.setAttribute("aria-label", "close");
   }
 };
 

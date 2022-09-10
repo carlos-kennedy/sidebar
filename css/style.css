@@ -19,25 +19,27 @@
 }
 
 body {
-  width: 100vw;
+  width: min(100%);
   height: min(100vh);
+
   font-family: "Poppins", sans-serif;
 }
 
 nav.active {
   width: min(25rem);
   height: min(100vh);
+  background: var(--m-color);
+
   display: flex;
   flex-flow: column;
   align-items: stretch;
   justify-content: space-between;
-  background: var(--m-color);
-
 }
 
 button {
-  cursor: pointer;
   background: transparent;
+
+  cursor: pointer;
 }
 
 nav.active header svg.logo {
@@ -45,11 +47,12 @@ nav.active header svg.logo {
 }
 
 nav.active header div.logo-btn {
+  margin-inline: 2.9rem 1.4rem;
+  margin-block: 2.5rem;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 2.9rem 1.4rem;
-  margin-block: 2.5rem;
 }
 
 nav.active header button.open-menu {
@@ -57,13 +60,15 @@ nav.active header button.open-menu {
 }
 
 nav.active form.search {
-  display: flex;
-  gap: 1.3rem;
-  align-items: center;
-  background: var(--lg);
   margin-inline: 1.4rem;
   margin-bottom: 2rem;
+  background: var(--lg);
+
   border-radius: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
 }
 
 nav.active form.search::before {
@@ -75,26 +80,28 @@ nav.active form.search svg.m-aglass {
 }
 
 nav.active form.search div.i-search {
+  padding-inline: 1.3rem 0;
+  padding-block-start: 0.4rem;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-inline: 1.3rem 0;
-  padding-block-start: 0.4rem;
 }
 
 nav.active form.search input#search {
-  display: initial;
-  padding: 1.3rem;
-
   width: 100%;
+  padding: 1.3rem;
   background: transparent;
+
+  display: initial;
 }
 
 nav.active ul.menu {
-  display: flex;
-  flex-flow: column;
-  gap: 3.4rem;
   margin-inline: 2.7rem 0;
+
+  display: flex;
+  gap: 3.4rem;
+  flex-flow: column;
 }
 
 nav.active ul.menu li a {
@@ -115,29 +122,35 @@ nav.active div.user {
   padding-inline: 1.4rem;
   padding-block: 0;
   background: var(--lg);
+
   display: flex;
   align-items: center;
   gap: 0.9rem;
+
   cursor: auto;
 }
 
 nav.active div.user img {
-  display: initial;
   width: 4rem;
   height: 4rem;
+
   border-radius: 1.5rem;
+
+  display: initial;
 }
 
 nav.active div.user-info {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
   padding-inline-end: 1.8rem;
   padding-block: 0.8rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
 }
 
 nav.active div.user-info .name {
   display: initial;
+
   font-size: 1.5rem;
   line-height: 2.2rem;
   font-weight: 500;
@@ -145,22 +158,24 @@ nav.active div.user-info .name {
 }
 nav.active div.user-info .job {
   display: initial;
+
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-weight: 500;
   color: var(--dg);
 }
 
-/* barra encolhida */
-
+/* ===BARRA ENCOLHIDA=== */
 nav {
   width: min(7.8rem);
   height: min(100%);
+  background: var(--m-color);
+
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: space-between;
-  background: var(--m-color);
+
   transition: 0.5s;
 }
 
@@ -173,9 +188,10 @@ nav header button.open-menu {
 }
 
 nav form.search {
+  margin-bottom: 3rem;
+
   position: relative;
   z-index: 1;
-  margin-bottom: 3rem;
 }
 
 nav form.search label {
@@ -184,14 +200,17 @@ nav form.search label {
 
 nav form.search::before {
   content: "";
-  background: var(--l-grey);
-  position: absolute;
-  z-index: -1;
   width: 5rem;
   height: 5rem;
+  background: var(--l-grey);
+
+  position: absolute;
+  z-index: -1;
   left: -1.2rem;
   top: -1.2rem;
+
   border-radius: 1.2rem;
+
   cursor: pointer;
 }
 
@@ -210,11 +229,13 @@ nav ul.menu li a span {
 }
 
 nav div.user {
-  display: flex;
-  padding-block: 1.8rem;
-  justify-content: center;
   width: 100%;
+  padding-block: 1.8rem;
   background: var(--lg);
+
+  display: flex;
+  justify-content: center;
+
   cursor: pointer;
 }
 

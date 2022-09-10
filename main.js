@@ -6,7 +6,7 @@ const button = document.querySelector(".open-menu");
 const changeSize = () => {
   nav.classList.toggle("active");
   meowSound.play();
-  nav.style.transition = "1s";
+  nav.style.transition = ".9s";
 };
 
 button.addEventListener("click", changeSize);
